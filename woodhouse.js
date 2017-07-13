@@ -21,6 +21,15 @@ client.on('message', message =>
 				message.reply(message.replace('echo', ''));
 				break;
 			}
+			case 'hello':
+			{
+				message.reply(message.reply('Hello! Can I make you a cup of coffee?'));
+				break;
+			}
+			deafult:
+			{
+				message.reply('Sorry sir, I don\'t support that command at the moment.');
+			}
 		}
 	}
 });
