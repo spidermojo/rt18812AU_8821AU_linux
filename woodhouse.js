@@ -13,6 +13,7 @@ client.on('message', message =>
 		{
 			case 'help':
 			{
+				//Comment
 				message.reply('');
 				break;
 			}
