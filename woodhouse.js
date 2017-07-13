@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message =>
 {
-	if (message.startsWith('Woodhouse') || message.startsWith('woodhouse'))
+	if (message.toString().startsWith('Woodhouse') || message.toString().startsWith('woodhouse'))
 	{
 		switch (message)
 		{
