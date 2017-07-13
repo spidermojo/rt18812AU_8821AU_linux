@@ -13,7 +13,7 @@ client.on('message', message =>
 		{
 			case 'help':
 			{
-				message.reply('I support the following commands:\n\n\t echo');
+				message.reply('');
 				break;
 			}
 			case 'echo':
