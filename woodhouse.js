@@ -7,14 +7,13 @@ client.on('ready', () => {
 
 client.on('message', message =>
 {
-	if (message.toString().startsWith('Woodhouse') || message.toString().startsWith('woodhouse'))
+	if (message.startsWith('Woodhouse') || message.startsWith('woodhouse'))
 	{
 		switch (message)
 		{
 			case 'help':
 			{
-				//Comment test
-				message.reply('');
+				message.reply('I support the following commands:\n\n\t echo');
 				break;
 			}
 			case 'echo':
