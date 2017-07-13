@@ -16,6 +16,11 @@ client.on('message', message =>
 				message.reply('I support the following commands:\n\n\t echo');
 				break;
 			}
+			case 'echo':
+			{
+				message.reply(message.replace('echo', ''));
+				break;
+			}
 		}
 	}
 });
