@@ -7,9 +7,16 @@ client.on('ready', () => {
 
 client.on('message', message =>
 {
-	if (message.content === 'ping')
+	if (message.startsWith('Woodhouse') || message.startsWith('woodhouse'))
 	{
-		message.reply('pong');
+		switch (message)
+		{
+			case 'help':
+			{
+				message.reply('I support the following commands:\n\n\t echo');
+				break;
+			}
+		}
 	}
 });
 
