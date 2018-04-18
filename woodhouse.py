@@ -31,5 +31,3 @@ async def joined(ctx, member: discord.Member = None):
 @my_bot.command()
 async def on_command_error(error, ctx):
 	await my_bot.say('Oops. The command seemed to have broken me. Please refraing from doing it again')
-
-my_bot.run("MzMzNzEzNjIyNjQxNjcyMTky.DEQqyA.iiPTJAgNkZAT1cJtqGIvdHlHIQ0")
